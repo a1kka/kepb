@@ -1,0 +1,556 @@
+/*Главная страница*/
+
+/*Продукты*/
+body{
+  margin: 0; /*внешний отступ*/
+  font-family: 'Marck Script', cursive;/*установка шрифта*/
+  background-color: #b0afb4;/*фоновая заливка*/
+}
+*{
+  box-sizing: border-box;/*указывает браузеру учитывать любые границы и отступы в значениях, которые вы указываете для ширины и высоты элемента*/
+}
+
+h1, h2, h3, h4{
+  margin: 0 auto;
+}
+/*Container*/
+.container{
+  width: 100%;
+  max-width: 1200px;/*максимальную ширину элемента*/
+  margin: 0 auto;
+}
+/*Intro*/
+.intro{
+  display: flex; /*элементы становятся flex элементами, выстроенными в ряд*/
+  flex-direction: column;/*главная ось гибкого контейнера такая же, как ось блока.*/
+  justify-content: center;/*предметы упаковываются заподлицо друг с другом по направлению к центру выравнивающего контейнера вдоль главной оси.*/
+  width: 100%;/*элемент расстягивается на всю ширину*/
+  height: 120vh;/*размер элементов относительно размера области просмотра*/
+  background: url("../img/font.jpg") center 
+  no-repeat;/*фоновое изображение по центру*/
+  -webkit-background-size: cover;
+  background-size: cover;/*устанавливает размер фонового изображения элемента*/
+}
+
+.intro_inner{
+  padding: 250px;/*внутренний отступ*/
+  padding-top: 100px;
+  padding-right: 10px;
+  
+}
+.intro_inner h1{
+  
+  text-align: right;/*расположение текста*/
+  font-weight: 100;/*жирность текста*/
+  font-size: 40px;/*размер шрифта*/
+  
+}
+
+.intro_inner h2{
+  text-align: right;
+  font-weight: 100;
+  font-size: 40px;
+}
+
+.intro_title{
+  font-size: 40px;
+}
+
+.intro_suptitle{
+  font-size: 40px;
+}
+
+
+/*Header*/
+.header{
+  width: 100%;
+  position: absolute;/*Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет.*/
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header_inner{
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;/*выравнивает flex-элементы текущей flex-линии таким же образом, как и justify-content, но в перпендикулярном направлении.*/
+}
+
+.header_logo{
+  padding-top: 15px;
+  font-weight: 500;
+  color: black;
+}
+
+
+
+/*NAV*/
+.nav{
+  font-size: 20px;
+  text-transform: uppercase;/*Управляет преобразованием текста элемента в заглавные или прописные символы. */
+}
+
+.nav_link{
+  display: inline-block;/*Многоцелевое свойство, которое определяет, как элемент должен быть показан в документе.*/
+  vertical-align: top;/*станавливает вертикальное выравнивание встроенного блока*/
+  margin: 0 10px;
+  color: black;
+  text-decoration: none;/*Добавляет оформление текста в виде его подчеркивания, перечеркивания, линии над текстом и мигания.*/
+  transition: color 0.2s linear;/*свойство перехода длемента*/
+}
+
+.nav_link:hover {
+  color: #806f8b;/*цвет перехода элемента*/
+}
+
+/*Section*/
+
+.section{
+  padding: 0;
+  
+}
+
+.image{
+
+  position: absolute;
+    width: 100%;
+    
+
+}
+.image p {
+  color: rgb(255, 255, 255);
+  font-size: 90px;
+  position: absolute;
+  top: 250px;
+  margin: 0 0 0 630px;
+
+}
+
+.image_2{
+  position: absolute;
+  padding-top: 430px;
+    width: 100%;
+}
+.image_2 p {
+  color: rgb(255, 255, 255);
+  font-size: 90px;
+  position: absolute;
+  top: 650px;
+  margin: 0 0 0 800px;
+}
+
+.image_3{
+  position: absolute;
+  padding-top: 360px;
+    width: 100%;
+}
+.image_3 p {
+  color: rgb(255, 255, 255);
+  font-size: 90px;
+  position: absolute;
+  top: 600px;
+  margin: 0 0 0 800px;
+}
+
+.image_4{
+  position: absolute;
+  padding-top: 200px;
+    width: 100%;
+}
+.image_4 p {
+  color: rgb(255, 255, 255);
+  font-size: 90px;
+  position: absolute;
+  top: 450px;
+  margin: 0 0 0 730px;
+}
+
+.image_5{
+  position: absolute;
+  padding-top: 350px;
+    width: 100%;
+}
+.image_5 p {
+  color: rgb(255, 255, 255);
+  font-size: 90px;
+  position: absolute;
+  top: 600px;
+  margin: 0 0 0 800px;
+}
+
+.image_6{
+  position: absolute;
+  padding-top: 420px;
+    width: 100%;
+}
+.image_6 p {
+  color: rgb(255, 255, 255);
+  font-size: 90px;
+  position: absolute;
+  top: 660px;
+  margin: 0 0 0 800px;
+}
+
+.image_7{
+  position:initial;
+  background-color: #b0afb4;
+  padding-top: 360px;
+    width: 100%;
+}
+ 
+.image_7 p {
+  color: #fff;
+  font-size: 40px;
+  position: absolute;
+  padding-top: 470px;
+  top: 300px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100px;
+}
+
+/*About*/
+.about{
+  padding: 100px;
+  display:contents;
+  position: absolute;
+  justify-content: space-between;
+}
+
+.about_item{
+  width: 100%;
+}
+
+.about_img_1{
+  padding: 80px;
+  padding-top: 712px;
+}
+
+.about_img_1 h1{
+  font-size: 50px;
+  text-align: center;
+  padding-right: 250px;
+  font-weight: 300;
+}
+
+.about_img_1 p{
+  font-size: 30px;
+  text-align: center;
+}
+
+
+.about_img_2{
+  padding: 80px;
+  padding-top: 90px;
+}
+
+.about_img_2 h1{
+  font-size: 50px;
+  text-align: center;
+  padding-right: 250px;
+  font-weight: 300;
+}
+
+.about_img_2 p{
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+.about_img_3{
+  padding: 80px;
+  padding-top: 212px;
+}
+
+.about_img_3 h1{
+  font-size: 50px;
+  text-align: center;
+  padding-right: 250px;
+  font-weight: 300;
+}
+
+.about_img_3 p{
+  font-size: 30px;
+  text-align: center;
+}
+
+.about_img_4{
+  padding: 80px;
+  padding-top: 1182px;
+}
+
+.about_img_4 h1{
+  font-size: 50px;
+  text-align: center;
+  padding-right: 250px;
+  font-weight: 300;
+}
+
+.about_img_4 p{
+  font-size: 30px;
+  text-align: center;
+}
+
+.about_img_5{
+  padding: 80px;
+  padding-top: 140px;
+}
+
+.about_img_5 h1{
+  font-size: 50px;
+  text-align: center;
+  padding-right: 250px;
+  font-weight: 300;
+}
+
+.about_img_5 p{
+  font-size: 30px;
+  text-align: center;
+}
+
+.about_img_6{
+  padding: 80px;
+  padding-top: 180px;
+}
+
+.about_img_6 h1{
+  font-size: 50px;
+  text-align: center;
+  padding-right: 250px;
+  font-weight: 300;
+}
+
+.about_img_6 p{
+  font-size: 30px;
+  text-align: center;
+}
+
+.about_img_7{
+  padding: 80px;
+  padding-top: 1100px;
+}
+
+.about_img_7 h1{
+  font-size: 50px;
+  text-align: center;
+  padding-right: 250px;
+  font-weight: 300;
+}
+
+.about_img_7 p{
+  font-size: 30px;
+  text-align: center;
+}
+
+.about_img_8{
+  padding: 80px;
+  padding-top: 150px;
+}
+
+.about_img_8 h1{
+  font-size: 50px;
+  text-align: center;
+  padding-right: 250px;
+  font-weight: 300;
+}
+
+.about_img_8 p{
+  font-size: 30px;
+  text-align: center;
+}
+
+.about_img_9{
+  padding: 80px;
+  padding-top: 190px;
+}
+
+.about_img_9 h1{
+  font-size: 50px;
+  text-align: center;
+  padding-right: 250px;
+  font-weight: 300;
+}
+
+.about_img_9 p{
+  font-size: 30px;
+  text-align: center;
+}
+
+.about_img_10{
+  padding: 80px;
+  padding-top: 1000px;
+}
+
+.about_img_10 h1{
+  font-size: 50px;
+  text-align: center;
+  padding-right: 250px;
+  font-weight: 300;
+}
+
+.about_img_10 p{
+  font-size: 30px;
+  text-align: center;
+}
+
+.about_img_11{
+  padding: 80px;
+  padding-top: 90px;
+}
+
+.about_img_11 h1{
+  font-size: 50px;
+  text-align: center;
+  padding-right: 250px;
+  font-weight: 300;
+}
+
+.about_img_11 p{
+  font-size: 30px;
+  text-align: center;
+}
+
+.about_img_12{
+  padding: 80px;
+  padding-top: 180px;
+}
+
+.about_img_12 h1{
+  font-size: 50px;
+  text-align: center;
+  padding-right: 250px;
+  font-weight: 300;
+}
+
+.about_img_12 p{
+  font-size: 30px;
+  text-align: center;
+}
+
+.about_img_13{
+  padding: 80px;
+  padding-top: 1180px;
+}
+
+.about_img_13 h1{
+  font-size: 50px;
+  text-align: center;
+  padding-right: 250px;
+  font-weight: 300;
+}
+
+.about_img_13 p{
+  font-size: 30px;
+  text-align: center;
+}
+
+.about_img_14{
+  padding: 80px;
+  padding-top: 370px;
+}
+
+.about_img_14 h1{
+  font-size: 50px;
+  text-align: center;
+  padding-right: 250px;
+  font-weight: 300;
+}
+
+.about_img_14 p{
+  font-size: 30px;
+  text-align: center;
+}
+
+.about_img_15{
+  padding: 80px;
+  padding-top: 280px;
+}
+
+.about_img_15 h1{
+  font-size: 50px;
+  text-align: center;
+  padding-right: 250px;
+  font-weight: 300;
+}
+
+.about_img_15 p{
+  font-size: 30px;
+  text-align: center;
+}
+
+.about_img_16{
+  padding: 80px;
+  padding-top: 1220px;
+}
+
+.about_img_16 h1{
+  font-size: 50px;
+  text-align: center;
+  padding-right: 250px;
+  font-weight: 300;
+}
+
+.about_img_16 p{
+  font-size: 30px;
+  text-align: center;
+}
+
+.about_img_17{
+  padding: 80px;
+  padding-top: 210px;
+}
+
+.about_img_17 h1{
+  font-size: 50px;
+  text-align: center;
+  padding-right: 250px;
+  font-weight: 300;
+}
+
+.about_img_17 p{
+  font-size: 30px;
+  text-align: center;
+}
+
+.about_img_18{
+  padding: 80px;
+  padding-top: 180px;
+
+}
+
+.about_img_18 h1{
+  font-size: 50px;
+  text-align: center;
+  padding-right: 250px;
+  font-weight: 300;
+}
+
+.about_img_18 p{
+  font-size: 30px;
+  text-align: center;
+}
+
+h1{
+  
+  font-size: 30px;
+  padding-right: 0px;
+  padding-top: 0px;
+  
+}
+
+p { width: 1500px;
+  font-size: 26px;
+
+
+ }
+  img {
+    float: left;
+
+    margin: 0 70px 10px 0;
+}
+
+
